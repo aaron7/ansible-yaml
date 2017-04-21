@@ -2,6 +2,9 @@
   tasks:
     - name: Run the module for development
       yaml:
+        path: ./test.yml
+        key: vars
+        value: hello world
       register: result
 
     - debug: var=result
