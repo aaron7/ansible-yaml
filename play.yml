@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+    - name: Run the module for development
+      yaml:
+      register: result
+
+    - debug: var=result
