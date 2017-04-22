@@ -1,10 +1,10 @@
 - hosts: localhost
   tasks:
-    - name: Run the module for development
+    - name: Example
       yaml:
         path: ./test.yml
-        key: vars
-        value: hello world
+        key: ingredients
+        value: flour
       register: result
 
     - debug: var=result

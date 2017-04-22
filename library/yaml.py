@@ -47,7 +47,7 @@ def do_yaml(module, path, key, value, state, sort):
             items.remove(value)
             has_changed = True
 
-    # Possibily sort
+    # Possibly sort
     if sort:
         items_before = items[:]
         items.sort()
